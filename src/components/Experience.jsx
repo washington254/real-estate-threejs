@@ -24,7 +24,7 @@ export const scenes = [
     range: 3000, // Square footage
   },
   {
-    path: "models/house2.glb",
+    path: "models/house2c.glb",
     mainColor: "#c0ffe1",
     name: "Sub-urban home",
     description: "A compact and versatile sub-urban house, ideal for those who love the outskirts of the city while enjoying the comforts of home.",
@@ -32,7 +32,7 @@ export const scenes = [
     range: 500, // Square footage
   },
   {
-    path: "models/house3.glb",
+    path: "models/house3c.glb",
     mainColor: "#ffdec0",
     name: "American House",
     description: "A classic American house with a spacious interior and traditional design, perfect for families.",
@@ -137,7 +137,7 @@ export const Experience = () => {
   return (
     <>
       <ambientLight intensity={0.2} />
-      <Environment  files={"./spree_bank_1k.hdr"} />
+      <Environment  preset="sunset"/>
       <CameraHandler slideDistance={slideDistance} />
     {/* MAIN WORLD */}
             <group>
